@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-import pyrebase
 import time
+import pyrebase
 import board
 import adafruit_dht  # temp sensor library
 
@@ -36,3 +36,5 @@ while True:
     # send connection variable to firebase
     data = {"tempConnection": tempConnection}
     db.child("Connections").set(data)
+
+    time.sleep(5.0)
