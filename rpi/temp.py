@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-import time
-from black import err
 import pyrebase
 import time
 import board
